@@ -1,38 +1,75 @@
 .App {
+  margin-top: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.App div,
+.App img {
+  padding: 20px;
+  margin: 10px;
+}
+
+.App div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.App div p {
+  text-align: left;
+}
+
+.App div button {
+  background-color: #94E4B4;
+  padding: 10px;
+  width: 100px;
+  color: aliceblue;
+  border-color: #94E4B4;
+}
+
+.quizProcess {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.question {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.question_text {
+  background-color: #94E4B4;
+  height: 800vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.options {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.op_text {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width:500px) {
+  .App {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App div button {
+    background-color: #94E4B4;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
   }
+
 }
